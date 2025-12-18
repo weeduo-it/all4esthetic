@@ -213,4 +213,4 @@ Desenvolvido por **all4esthetic**.
 
 ## 📄 Licença
 
-Definir licença do repositório (por ora, todos os direitos reservados a all4esthetic).
+Definir licença do repositório (por ora, todos os direitos reservados a all4esthetic). 
