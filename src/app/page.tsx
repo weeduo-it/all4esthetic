@@ -205,7 +205,7 @@ export default function HomePage() {
                             loading="lazy"
                           />
                           <div className="ms-3">
-                            <div className="testimonial-rating" aria-label="Avaliação com 5 estrelas">
+                            <div className="testimonial-rating" aria-label="Avaliação com 5 estrelas ">
                               <i className="bi bi-star-fill" aria-hidden="true"></i>
                               <i className="bi bi-star-fill" aria-hidden="true"></i>
                               <i className="bi bi-star-fill" aria-hidden="true"></i>
