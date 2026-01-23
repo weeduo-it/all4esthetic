@@ -86,8 +86,8 @@
     "category": "Emsculpt",
     "sale": true,
     "rental": {
-      "diario": true,
-      "bidiario": true,
+      "diario": false,
+      "bidiario": false,
       "semanal": false,
       "mensal": true
     }
