@@ -6,10 +6,17 @@ services:
     deploy:
       labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.all4esthetic.rule=Host(`all4esthetic.com`)"
+
+        # match both the root domain and www so Traefik obtains a cert for both
+        - "traefik.http.routers.all4esthetic.rule=Host(`all4esthetic.com`,`www.all4esthetic.com`)"
         - "traefik.http.routers.all4esthetic.entrypoints=websecure"
         - "traefik.http.routers.all4esthetic.tls.certresolver=myresolver"
         - "traefik.http.services.all4esthetic.loadbalancer.server.port=3000"
+
+        # redirect any www request to the canonical host
+        - "traefik.http.middlewares.redirect-www.redirectregex.regex=^https?://www\\.(.*)"
+        - "traefik.http.middlewares.redirect-www.redirectregex.replacement=https://$1"
+        - "traefik.http.routers.all4esthetic.middlewares=redirect-www@docker"
 
   traefik_redirect:
     image: traefik/whoami
