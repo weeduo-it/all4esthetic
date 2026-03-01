@@ -15,7 +15,7 @@ services:
 
         # redirect any www request to the canonical host
         - "traefik.http.middlewares.redirect-www.redirectregex.regex=^https?://www\\.(.*)"
-        - "traefik.http.middlewares.redirect-www.redirectregex.replacement=https://$1"
+        - "traefik.http.middlewares.redirect-www.redirectregex.replacement=https://$$1"
         - "traefik.http.routers.all4esthetic.middlewares=redirect-www@docker"
 
   traefik_redirect:
