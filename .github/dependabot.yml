@@ -1,0 +1,68 @@
+version: 2
+
+updates:
+  # -----------------------------
+  # Node.js (npm / yarn / pnpm)
+  # -----------------------------
+  - package-ecosystem: "npm"
+    directory: "/" 
+    schedule:
+      interval: "daily"
+      time: "06:00"
+    open-pull-requests-limit: 10
+
+    # Group updates to reduce PR noise
+    groups:
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
+
+    # Ignore major updates (avoid breaking changes)
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+    # Labels for easier filtering
+    labels:
+      - "dependencies"
+      - "dependabot"
+
+    # Assign reviewers automatically
+    reviewers:
+      - "your-github-username"
+
+    # Commit message customization
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+
+  # -----------------------------
+  # GitHub Actions
+  # -----------------------------
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+    labels:
+      - "dependencies"
+      - "github-actions"
+
+    commit-message:
+      prefix: "ci"
+
+  # -----------------------------
+  # Docker (if you use it)
+  # -----------------------------
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+    labels:
+      - "dependencies"
+      - "docker"
+
+    commit-message:
+      prefix: "docker"
