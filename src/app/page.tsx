@@ -87,14 +87,20 @@ export default function HomePage() {
       <Header />
 
       <main className="main" role="main" id="main">
-        <section className="hero light-background" id="hero" aria-label="Seção principal">
-          <div className="hero-image-wrapper">
-            <img loading="lazy" alt="Imagem principal de estética" className="img-fluid hero-img" src="/assets/img/hero-imagem.webp" />
-          </div>
-          <Container xl className="position-relative">
-            <div className="welcome position-relative" data-aos="fade-down" data-aos-delay={100}>
-              <div className="mobile-slide-text">
-                <h2>all4esthetic.<br />innovation.<br />results.</h2>
+        <section className="hero-veluria" id="hero" aria-label="Seção principal Velúria">
+          <Container xl>
+            <div className="hero-veluria-content">
+              <div className="text-content">
+
+                <h1 className="hero-title">Velúria</h1>
+                <p className="hero-subtitle">onde a delicadeza do toque encontra a precisão da inovação!</p>
+                <p className="hero-description">
+                  Equipamento desenvolvido com tecnologia laser de última geração, concebido para oferecer tratamentos eficazes, seguros e confortáveis. Marca, modelo e software exclusivo All4esthetic.
+                </p>
+                <Link className="cta-link" href="/detalhes?id=E169V6">Ver Detalhes</Link>
+              </div>
+              <div className="image-content">
+                <img loading="lazy" alt="Equipamento Velúria" className="hero-img" src="/assets/img/equipments/E169V6/E169V6-1.webp" />
               </div>
             </div>
           </Container>

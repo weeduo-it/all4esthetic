@@ -21,6 +21,7 @@ type Equipment = {
   detalhe?: string;
   sale?: boolean;
   rental?: Partial<Record<RentalKey, boolean>>;
+  label?: string;
 };
 
 const CATEGORIES = [
@@ -405,6 +406,9 @@ export default function Page() {
                         >
                           <div className="card equipamento-card h-100">
                             <div className="card-category-top">{e.category}</div>
+                            {e.label === "novidade" && (
+                              <div className="badge-novidade">Novidade</div>
+                            )}
 
                             <div className="card-img-wrap">
                               <img src={e.image} alt={e.name} className="card-img-top" />
@@ -420,7 +424,7 @@ export default function Page() {
                               <p className="card-ref text-muted small mb-2 mt-auto">REF: {e.ref ?? e.id}</p>
                               </span>
 
-                              <Link href={`/detalhes?id=${e.id}`} className="btn btn-primary mt-auto">
+                              <Link href={`/detalhes?id=${e.id}`} className="btn btn-equipamento mt-auto">
                                 Mais detalhes
                               </Link>
                             </div>

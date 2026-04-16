@@ -1,5 +1,54 @@
 [
   {
+    "id": "E169V6",
+    "name": "Laser Diodo Velúria",
+    "designação": "755,808,1064nm",
+    "detalhe":"Laser de diodo com comprimentos de onda 755, 808 e 1064nm, tecnologia avançada para depilação e tratamentos estéticos." ,
+    "ref": "E169V6",
+    "code_rev": "FTE169V6.01",
+    "functions": [
+      {
+        "nome": "Laser Diodo",
+        "descricao": "Equipamento com 12 barras emissoras de laser, atuando em 3 níveis de profundidade simultâneos, permitindo resultados rápidos e eficazes."
+      }
+    ],
+    "technical_data": {
+      "Programação:": "Automática",
+      "Potência:": "720W (12 barras de 60W)",
+      "Espectro_laser:": "755nm, 808nm e 1064nm",
+      "Energia_regulável:": "1 a 160 J/cm^3",
+      "Fonte_de_alimentação_de_laser:": "1200W",
+      "Refrigeração:": "Cooler e água com sistema ITEC incorporado",
+      "Corrente_eléctrica:": "100-240VAC, 20A max, 50/60Hz"
+    },
+    "logistics": {
+      "Dimensões:": "57 cm x 37 cm x 35 cm",
+      "Peso:": "35,400 kgs"
+    },
+    "legislation": [
+      "LVD 2014/35/EU",
+      "ROSH 2011/65/EU",
+      "EMC 2014/30/EU",
+      "Laser classe 4 de acordo com a norma europeia EN 60825-1:1994 e com as demais atualizações."
+    ],
+    "application": "Apenas para uso estético.",
+    "image": "assets/img/equipments/E169V6/E169V6-1.webp",
+    "images": [
+      "assets/img/equipments/E169V6/E169V6-1.webp",
+      "assets/img/equipments/E169V6/E169V6-3.webp",
+      "assets/img/equipments/E169V6/E169V6-2.webp"
+    ],
+    "category": "Laser",
+    "sale": true,
+    "rental": {
+      "diario": true,
+      "bidiario": true,
+      "semanal": false,
+      "mensal": true
+    },
+    "label": "novidade"
+  },
+  {
     "id": "E007",
     "name": "Electroestimulação",
     "designação": "",
@@ -574,7 +623,7 @@
       "assets/img/equipments/E169V1-E069V1/E169V1-E069V1-4.webp"
     ],
     "category": "Laser",
-    "sale": true,
+    "sale": false,
     "rental": {
       "diario": false,
       "bidiario": false,
@@ -623,7 +672,7 @@
       "assets/img/equipments/E169V1-E069V1/E169V1-E069V1-4.webp"
     ],
     "category": "Laser",
-    "sale": true,
+    "sale": false,
     "rental": {
       "diario": true,
       "bidiario": true,
