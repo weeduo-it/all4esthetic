@@ -3,27 +3,46 @@
     "id": "E169V6",
     "name": "Laser Diodo Velúria",
     "designação": "755,808,1064nm",
-    "detalhe":"Laser de diodo com comprimentos de onda 755, 808 e 1064nm, tecnologia avançada para depilação e tratamentos estéticos." ,
+    "detalhe": "Equipamento de Laser Diodo com foco unidirecional desenvolvido com tecnologia de precisão, elevados padrões de segurança e eficácia. Software exclusivo para programação automática.",
     "ref": "E169V6",
     "code_rev": "FTE169V6.01",
     "functions": [
       {
         "nome": "Laser Diodo",
         "descricao": "Equipamento com 12 barras emissoras de laser, atuando em 3 níveis de profundidade simultâneos, permitindo resultados rápidos e eficazes."
+      },
+      {
+        "nome": "Software Exclusivo",
+        "descricao": "Programação automática de acordo com a zona, fototipos de pele e tipo pêlo. A parameterização pode ser feita no equipamento e os ajustes necessários durante a sessão no próprio manípulo."
+      },
+      {
+        "nome": "Ponteiras",
+        "descricao": "Possui dois tipos de ponteiras, incluindo a de precisão que permite fazer o tratamento em zonas pequenas e delicadas."
+      },
+      {
+        "nome": "Refrigeração",
+        "descricao": "Alta capacidade de refrigeração, seja do equipamento como a da ponteira do manipulo, que permite em tratamento continuo atingir os -10ºC."
+      },
+      {
+        "nome": "Sistemas de Alerta",
+        "descricao": "Munido de vários sistemas inteligentes de alerta que permitem identificar, de forma rápida, a temperatura e velocidade de circulação da água interna e do manipulo."
       }
     ],
     "technical_data": {
+      "Display:": "11.6 inch",
       "Programação:": "Automática",
-      "Potência:": "720W (12 barras de 60W)",
       "Espectro_laser:": "755nm, 808nm e 1064nm",
-      "Energia_regulável:": "1 a 160 J/cm^3",
+      "Frequência:": "1 a 10Hz",
+      "Impulso:": "1 a 400ms",
+      "Energia_regulável:": "1 a 210 J (1 a 70 cm²)",
       "Fonte_de_alimentação_de_laser:": "1200W",
-      "Refrigeração:": "Cooler e água com sistema ITEC incorporado",
-      "Corrente_eléctrica:": "100-240VAC, 20A max, 50/60Hz"
+      "Ponteiras:": "12 * 25 mm e ponteira para detalhes",
+      "Refrigeração:": "Cooler + New ITEC cooling",
+      "Corrente_eléctrica:": "100-240VAC, 20A max., 50/60Hz"
     },
     "logistics": {
-      "Dimensões:": "57 cm x 37 cm x 35 cm",
-      "Peso:": "35,400 kgs"
+      "Dimensões:": "41,7 cm x 46,5 cm x 36,5 cm",
+      "Peso:": "26,00 kgs"
     },
     "legislation": [
       "LVD 2014/35/EU",
