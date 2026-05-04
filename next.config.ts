@@ -2,13 +2,15 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["all4esthetic.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'all4esthetic.com',
+      },
+    ],
   },
   typescript: {
     ignoreBuildErrors: false,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
   },
 };
 
