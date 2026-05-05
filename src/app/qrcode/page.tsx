@@ -1,8 +1,11 @@
 // app/redirector/page.js
 import { redirect } from 'next/navigation';
 
-export default function Page({ searchParams }) {
-  const c = searchParams?.c;
+export const dynamic = 'force-dynamic';
+
+export default async function Page({ searchParams }) {
+  const params = await searchParams;
+  const c = params?.c;
 
   if (!c) {
     return <p>Missing query parameter "c".</p>; // simple fallback
