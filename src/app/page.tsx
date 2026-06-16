@@ -88,22 +88,23 @@ export default function HomePage() {
 
       <main className="main" role="main" id="main">
         <section className="hero-veluria" id="hero" aria-label="Seção principal Velúria">
-          <Container xl>
-            <div className="hero-veluria-content">
-              <div className="text-content">
-
-                <h1 className="hero-title">Velúria</h1>
-                <p className="hero-subtitle">onde a delicadeza do toque encontra a precisão da inovação!</p>
-                <p className="hero-description">
-                  Equipamento desenvolvido com tecnologia laser de última geração, concebido para oferecer tratamentos eficazes, seguros e confortáveis. Marca, modelo e software exclusivo All4esthetic.
-                </p>
-                <Link className="cta-link" href="/detalhes?id=E169V6">Ver Detalhes</Link>
-              </div>
-              <div className="image-content">
-                <img loading="lazy" alt="Equipamento Velúria" className="hero-img" src="/assets/img/equipments/E169V6/E169V6-1.webp" />
-              </div>
-            </div>
-          </Container>
+          <h1 className="visually-hidden">Velúria - Onde a delicadeza do toque encontra a precisão da inovação</h1>
+          <picture className="hero-banner-picture">
+            <source media="(min-width: 1200px)" srcSet="/assets/img/equipments/E169V6/banner%20desktop.PNG" />
+            <source media="(min-width: 768px)" srcSet="/assets/img/equipments/E169V6/banner%20tablet.PNG" />
+            <img
+              className="hero-banner-img"
+              src="/assets/img/equipments/E169V6/banner%20mobile.PNG"
+              alt="Velúria. Onde a delicadeza do toque encontra a precisão da inovação. Tecnologia avançada para tratamentos delicados, eficazes e seguros."
+              fetchPriority="high"
+            />
+          </picture>
+          <div className="hero-cta-layer" aria-hidden="false">
+            <Link className="cta-link btn-primary hero-cta-link" href="/detalhes?id=E169V6" aria-label="Ver detalhes do Velúria">
+              <span className="hero-cta-text">Ver mais</span>
+              <i className="bi bi-arrow-right-short" aria-hidden="true"></i>
+            </Link>
+          </div>
         </section>
 
         <section className="sobre sobre-section" data-aos="fade-up" id="sobre" aria-labelledby="sobre-title">
