@@ -1472,6 +1472,11 @@ section,
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero-veluria {
     --hero-header-offset: 105px;
+    margin-bottom: 0;
+  }
+
+  .sobre-section {
+    padding-top: 32px;
   }
 
   .hero-banner-picture {
@@ -1527,6 +1532,11 @@ section,
 @media (max-width: 767px) {
   .hero-veluria {
     --hero-header-offset: 96px;
+    margin-bottom: 0;
+  }
+
+  .sobre-section {
+    padding-top: 24px;
   }
 
   .hero-banner-picture {
