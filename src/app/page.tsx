@@ -134,7 +134,7 @@ export default function HomePage() {
         <section
           className="parallax-section text-white d-flex align-items-center"
           style={{ backgroundImage: "url('/assets/img/parallax-imagem.webp')" }}
-          aria-label="Seção parallax com destaque para equipamentos"
+          aria-label="Seção parallax com destaque para equipamentos "
         >
           <Container className="position-relative">
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
