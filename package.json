@@ -21,7 +21,7 @@
     "jspdf-autotable": "^5.0.7",
     "motion-dom": "^12.23.12",
     "motion-utils": "^12.23.6",
-    "next": "^16.2.9",
+    "next": "^16.3.3",
     "postcss": "^8.5.13",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
